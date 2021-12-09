@@ -1,4 +1,4 @@
-def bubbleSort(g_list):
+def bubble_sort(g_list):
     # "bubble Sort"
     for k in range(len(g_list)):
         print(k)
