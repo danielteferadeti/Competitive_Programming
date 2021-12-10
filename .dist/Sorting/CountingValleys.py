@@ -5,7 +5,7 @@ def countingValleys(steps, path):
     cur_pst = 0
     vly_started = False
     
-    for char in path: 
+    for char in path:
         if char == 'D' and not vly_started:
             if cur_pst == 0:
                 cur_pst -=1
