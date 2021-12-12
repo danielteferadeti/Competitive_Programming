@@ -17,8 +17,6 @@
 #         min_ind = 0
 #     return given_list
 
-#!/bin/python3
-
 import math
 import os
 import random
