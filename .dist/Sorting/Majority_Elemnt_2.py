@@ -1,11 +1,15 @@
 class Solution:
-    def kthLargestNumber(self, nums: List[str], k: int) -> str:
-        converted = []
+    def majorityElement(self, nums: List[int]) -> List[int]:
+        elmt_dict = {}
+        result = []
         
         for elmt in nums:
-            heapq.heappush(converted, int(elmt)*-1)
-            
-        for i in range(k-1):
-            heapq.heappop(converted)
+            if elmt not in elmt_dict:
+                elmt_dict[elmt] = 1
+            else:
+                elmt_dict[elmt] =  elmt_dict[elmt] +1
         
-        return str(heapq.heappop(converted)*-1)
+        for key in elmt_dict:
+            if elmt_dict[key] > len(nums)/3:
+                result.append(key)
+        return result
