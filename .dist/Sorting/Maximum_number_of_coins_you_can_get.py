@@ -9,3 +9,4 @@ class Solution:
             i -=2
             
         return max_coins
+    
