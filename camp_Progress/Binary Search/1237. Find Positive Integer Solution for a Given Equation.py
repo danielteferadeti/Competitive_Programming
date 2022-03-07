@@ -6,6 +6,6 @@ class Solution:
             for y in range(1, 1001):
                 if customfunction.f(x,y) == z:
                     solution.append((x,y))
-                elif customfunction.f(x,y) > z: 
+                elif customfunction.f(x,y) > z:
                     break
         return solution
