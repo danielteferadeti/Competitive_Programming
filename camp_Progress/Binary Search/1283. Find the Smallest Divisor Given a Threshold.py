@@ -15,11 +15,11 @@ class Solution:
         while l <= r:
             m = (r + l)//2
             cur_sum = cal_div(m)
-            
+
             if cur_sum <= threshold:
                 smallest_divisor = m
                 r = m -1
             else:
                 l = m +1
-                
+
         return smallest_divisor
