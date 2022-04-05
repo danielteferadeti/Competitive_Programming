@@ -21,8 +21,8 @@ class Solution:
             curCoor = (i, j+1)
             self.solver(curCoor,newColor,givenColor,givenImage,colLen,rowLen)
         return givenImage
-        
-        
+
+
     def floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:
         rowLen = len(image)
         colLen = len(image[0])
