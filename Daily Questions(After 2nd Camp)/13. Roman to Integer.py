@@ -11,5 +11,5 @@ class Solution:
             else:
                 result += _dict[s[cur]] - _dict[s[cur-1]]
                 cur-=2
-        
+                
         return result
