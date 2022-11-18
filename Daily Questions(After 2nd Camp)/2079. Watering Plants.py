@@ -14,5 +14,4 @@ class Solution:
                 total += (((i+1)*2)-1)
                 capacity = original
                 capacity -= waterNeeded
-        
         return total
