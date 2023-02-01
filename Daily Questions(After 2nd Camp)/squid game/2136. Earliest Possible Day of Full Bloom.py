@@ -6,7 +6,7 @@ class Solution:
         
         bestMax = 0
         platingDays = 0
-        for i in range(len(plantTime)):
+        for i in range(len(sortArray)):
             platingDays += plantTime[sortArray[i][2]]
             bestMax = max(bestMax, platingDays+growTime[sortArray[i][2]])
             
