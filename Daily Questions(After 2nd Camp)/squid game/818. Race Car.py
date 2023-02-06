@@ -16,7 +16,7 @@ class Solution:
             
             if (nextPos, speed*2) not in visited:
                 queue.append(acc)
-                visited.add(acc)
+                visited.add((nextPos, speed*2))
             
             #Reverse
             reverse = (curPos, 1, stepCount+1) if speed < 0 else (curPos, -1, stepCount+1)
